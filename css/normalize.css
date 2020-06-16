@@ -137,18 +137,30 @@ body {
 .link-contact:hover,
 .link-contact:focus {
     color: var(--accent-color);
- }                            
+}                            
 
 .icon-contact-mail {
     height: 12px;
     width: 16px;
     margin-right: 10px;
+
+    fill: #757575;
+}
+
+.icon-contact-mail:hover {
+    fill: #2196F3;
 }
 
 .icon-contact-phon {
     height: 15px;
     width: 10px;
     margin-right: 10px;
+
+    fill: #757575;
+}
+
+.icon-contact-phon:hover {
+    fill: #2196F3;
 }
 
                                             /* footer */
@@ -224,6 +236,31 @@ body {
 .social {
     display: flex;
 }
+
+.icon-send {
+    height: 24px;
+    width: 24px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon-circle-footer {
+    height: 44px;
+    width: 44px;
+
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-circle-footer:not(:first-child) {
+    margin-left: 10px;
+}
+
+.icon-circle-footer:hover {
+    background-color: var(--accent-color);
+}
+
                     /* subscriber container */
 .subscribe {
     margin-top: 57px;
@@ -260,13 +297,6 @@ body {
     letter-spacing: normal;
 }
 
-.icon-send {
-    height: 24px;
-    width: 24px;
-
-    margin-left: 10px;
-    margin-right: 10px;
-}
                     /* copy container */
 .copy-flex {
     padding-top: 18px;
