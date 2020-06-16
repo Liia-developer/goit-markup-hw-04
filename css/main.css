@@ -32,10 +32,14 @@
     text-align: center;
 }
 
+
+
 .hero-title {
+    padding-top: 200px;
+    padding-left: 250px;
+    padding-right: 250px;
     margin-bottom: 30px;
 
-    background-color: #757575;
     color: var(--primary-white-color);
 
     font-weight: 900;
@@ -49,13 +53,15 @@
 .button {
     display: inline-block;
     /* min-width: 200px; */
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
     padding: 10px 32px 10px 32px;
-    border-radius: 4px;    
 
+    border-radius: 4px;    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-
+    
     text-align: center;
     text-decoration: none;
 }
@@ -64,15 +70,34 @@
     margin-bottom: 94px;
 }
 
+.bg-hero {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+       
+    
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+        ),
+        url('../images/Header.jpg');
+
+    background-color: #757575;
+}
+
+
+
 
                /* section - company features */
 
 .features {
     display: flex;
-}
-
-.features-image {
-    margin-bottom: 30px;
 }
 
 .features .item:not(:first-child) {
@@ -91,6 +116,25 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
+
+.icon-features {
+    display: flex;
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+
+    background: #F5F4FA;
+    border-radius: 4px;
+    
+    justify-content: center;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    margin-top: 25px;
+
+}
             /* section - activity of the company */
 
 .activity {
@@ -99,6 +143,21 @@
 
 .activity .item:not(:first-child) {
     margin-left: 30px;
+}
+
+.activity-text {
+    margin-bottom: 0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    background: rgba(47, 48, 58, 0.8);
+    color: #FFFFFF;
 }
 
                 /* section - command structure */
@@ -115,6 +174,13 @@
     display: flex;
 }
 
+.command-shadow {
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .command .item:not(:first-child) {
     margin-left: 30px;
 }
@@ -126,10 +192,10 @@
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+
+    text-align: center;
 }
-
                         /* h3 */
-
 .title-name {
     margin-bottom: 10px;
 
@@ -138,7 +204,36 @@
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+
+    text-align: center;
 }
+
+.social-first {
+    display: flex;
+
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-bottom: 24px;
+}
+
+.social-command {
+    justify-content: center;
+}
+
+.icon-circle {
+    height: 44px;
+    width: 44px;
+    /* border-radius: 12px; */
+    /* margin-right: 10px; */
+    /* margin-left: 32px; */
+}
+
+.icon-social {
+    height: 20px;
+    width: 20px;
+    margin: 12px;
+}
+
 
                /* section - company partners */
 
@@ -151,9 +246,56 @@
     margin-left: 30px;
 }
         
+.size-one {
+    height: 50px;
+    width: 45px;
+    margin-top: 20px;
+    margin-left: 63px;
+}
 
+.size-two {
+    height: 52px;
+    width: 40px;
+    margin-top: 19px;
+    margin-left: 65px;
+}
 
+.size-three {
+    height: 43px;
+    width: 41px;
+    margin-top: 24px;
+    margin-left: 65px;
+}
 
+.size-four {
+    height: 42px;
+    width: 80px;
+    margin-top: 24px;
+    margin-left: 45px;
+}
+
+.size-five {
+    height: 47px;
+    width: 59px;
+    margin-top: 22px;
+    margin-left: 56px;
+    
+}
+
+.size-six {
+    height: 46px;
+    width: 89px;
+    margin-top: 22px;
+    margin-left: 41px;
+}
+
+.item-box {
+    height: 90px;
+    width: 170px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
                                           /* Portfolio */
 
                                         /* filter button */
@@ -205,6 +347,15 @@ button {
     justify-content: center;
     margin-right: 0;
     margin-bottom: 0;
+}
+
+.gallery-shadow {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    
+    /* box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    0px 1px 1px rgba(0, 0, 0, 0.12); */
 }
 
 .gallery .item {
