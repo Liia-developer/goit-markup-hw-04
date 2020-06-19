@@ -133,34 +133,38 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-                            
+     
 .link-contact:hover,
 .link-contact:focus {
     color: var(--accent-color);
 }                            
 
+.link-contact .icon-contact-mail {
+    fill: #757575;
+}
+
 .icon-contact-mail {
     height: 12px;
     width: 16px;
     margin-right: 10px;
-
-    fill: #757575;
 }
 
-.icon-contact-mail:hover {
-    fill: #2196F3;
+.link-contact:hover .icon-contact-mail {
+    --color3: var(--accent-color);
+}
+
+.link-contact .icon-contact-phon {
+    fill: #757575;
 }
 
 .icon-contact-phon {
     height: 15px;
     width: 10px;
     margin-right: 10px;
-
-    fill: #757575;
 }
 
-.icon-contact-phon:hover {
-    fill: #2196F3;
+.link-contact:hover .icon-contact-phon {
+    --color3: var(--accent-color);
 }
 
                                             /* footer */
@@ -245,7 +249,18 @@ body {
     margin-right: 10px;
 }
 
-.icon-circle-footer {
+.icon-footer:not(:first-child) {
+    margin-left: 10px;
+}
+
+.social-link-second {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+
     height: 44px;
     width: 44px;
 
@@ -253,12 +268,12 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.icon-circle-footer:not(:first-child) {
-    margin-left: 10px;
+.social-link-second:hover {
+    background-color: var(--accent-color);
 }
 
-.icon-circle-footer:hover {
-    background-color: var(--accent-color);
+.social-link-second:hover .icon-social {
+    --color3: #ffffff;
 }
 
                     /* subscriber container */
@@ -266,7 +281,6 @@ body {
     margin-top: 57px;
     margin-left: 94px;
 }
-
 
 .subscribe .button-footer {
     display: flex;
